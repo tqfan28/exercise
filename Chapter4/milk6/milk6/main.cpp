@@ -45,15 +45,6 @@ const int MAXNODE = 32;
 const int MAXM = 1000;
 e edges[MAXM];
 
-list<e>::iterator findList (list<e>& ls, int index) {
-    list<e>::iterator itr = ls.begin();
-    while(itr != ls.end()) {
-        if (itr->index == index)
-            return itr;
-        itr ++;
-    }
-    return itr;
-}
 
 int Flow(int scr, int sink, int NODE, int dm) {
     
